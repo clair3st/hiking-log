@@ -13,7 +13,7 @@ class Hike(models.Model):
     name = models.CharField(max_length=255, blank=True)
     date = models.DateField(null=True)
     gain = models.IntegerField(null=True)
-    high = models.IntegerField(null=True)
+    height = models.IntegerField(null=True)
     duration = models.DurationField(null=True)
     distance = models.FloatField(null=True)
     region = models.CharField(max_length=255, blank=True)
