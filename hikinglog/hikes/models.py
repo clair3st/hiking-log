@@ -20,6 +20,8 @@ class Hike(models.Model):
     park = models.CharField(max_length=255, blank=True)
     weather = models.CharField(max_length=255, blank=True)
     notes = models.TextField(blank=True, null=True)
+    lat = models.DecimalField(max_digits=9, decimal_places=6, null=True)
+    lng = models.DecimalField(max_digits=9, decimal_places=6, null=True)
 
     def __str__(self):
         """String represntation of the model."""
