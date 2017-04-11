@@ -1,0 +1,12 @@
+{% extends 'hikinglog/layout.html' %}
+
+{% block body %}
+<div class="page-header">
+        <h1>Update a hike</h1>
+      </div>
+  <form method="post" enctype="multipart/form-data">  
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary" value="Save">Save</button>
+  </form>
+{% endblock body %}
