@@ -1,5 +1,5 @@
 from django.contrib import admin
-from hikes.models import Hikes
+from hikes.models import Hike
 # Register your models here.
 
-admin.site.register(Hikes)
+admin.site.register(Hike)
