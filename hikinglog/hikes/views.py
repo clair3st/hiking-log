@@ -1,6 +1,6 @@
 """View Class for hiking app."""
 
-from hikes.models import Hikes
+from hikes.models import Hike
 from django.views.generic import (CreateView,
                                   UpdateView)
 from django.urls import reverse_lazy
@@ -10,7 +10,7 @@ class CreateHike(CreateView):
     """Add a hike."""
 
     template_name = 'hikes/new_hike.html'
-    model = Hikes
+    model = Hike
     fields = ['name',
               'date',
               'gain',
@@ -31,7 +31,7 @@ class EditHike(UpdateView):
 
     template_name = "hikes/edit_hike.html"
     success_url = reverse_lazy("home")
-    model = Hikes
+    model = Hike
     fields = ['name',
               'date',
               'gain',
