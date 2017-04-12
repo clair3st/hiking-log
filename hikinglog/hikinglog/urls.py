@@ -21,5 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name="hikinglog/home.html"),
         name='home'),
+    url(r'^map/', TemplateView.as_view(template_name="hikinglog/map.html"),
+        name='map'),
     url(r'^hikes/', include('hikes.urls'))
 ]
