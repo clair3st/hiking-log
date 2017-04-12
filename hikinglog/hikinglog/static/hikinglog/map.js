@@ -1,16 +1,16 @@
 (function(module) {
-
+  "use strict";
 
 
   var mapOptions = {
-    zoom: 15,
+    zoom: 5,
     center: new google.maps.LatLng(47.618217, -122.351832),
     mapTypeId: google.maps.MapTypeId.STREET,
     zoomControl: true,
     zoomControlOptions: {
       position: google.maps.ControlPosition.RIGHT_CENTER
     }
-  }
+  };
 
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
