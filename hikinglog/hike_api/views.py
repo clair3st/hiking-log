@@ -1,8 +1,8 @@
 """View API endpoint."""
 
 from rest_framework import viewsets
-from imager_images.models import Hike
-from imager_api.serializers import HikeSerializer
+from hikes.models import Hike
+from hike_api.serializers import HikeSerializer
 # from django.urls import reverse_lazy
 
 
