@@ -1,4 +1,6 @@
 {% extends 'hikinglog/layout.html' %}
+{% load staticfiles %}
+
 
 {% block body %}
 <div class="page-header">
@@ -11,3 +13,7 @@
   </form>
   
 {% endblock body %}
+{% block js %}
+    <script src="{% static 'hikinglog/form.js' %}"></script>
+
+{% endblock %}
