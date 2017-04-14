@@ -1,4 +1,6 @@
 {% extends 'hikinglog/layout.html' %}
+{% load staticfiles %}
+
 
 {% block body %}
 <div class="page-header">
@@ -7,3 +9,9 @@
   
 <div id="map"></div>
 {% endblock body %}
+
+{% block js %}
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9xYdImKyQJbV3lKRVPqae9qWzo4VIvl4&v=3.exp&libraries=visualization"></script>
+    <script src="{% static 'hikinglog/map.js' %}"></script>
+
+{% endblock %}

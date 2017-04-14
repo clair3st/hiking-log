@@ -46,12 +46,3 @@
     </footer>
 {% endblock content%}
 
-{% block js %}
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9xYdImKyQJbV3lKRVPqae9qWzo4VIvl4&v=3.exp&libraries=visualization"></script>
-    <script src="{% static 'hikinglog/map.js' %}"></script>
-  <script type="text/javascript">
-      $( function() {
-    $("#id_date").datepicker();
-  } );
-  </script>
-{% endblock %}
