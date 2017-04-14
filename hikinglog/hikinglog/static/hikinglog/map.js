@@ -21,14 +21,9 @@ google.maps.event.addDomListener(window, 'resize', function() {
 });
 
 var marker = new google.maps.Marker({
-  position: {lat: 47.618217, lng: -122.351832},
   map: map
 });
 
-// google.maps.event.addDomListener(window, 'load', function() {
-//   var input = document.getElementById('id_name');
-//   map.autocomplete = new google.maps.places.Autocomplete(input);
-// });
 
 $(document).ready(function() {
 $.get("/api/hikes/").success(function (data) {
@@ -49,12 +44,6 @@ $.get("/api/hikes/").success(function (data) {
       }
     })
   });
-
-
-$( function() {
-    $("#id_date").datepicker();
-  } );
-
 
 
 module.map = map;
