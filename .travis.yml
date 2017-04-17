@@ -4,6 +4,9 @@ python:
 - '2.7'
 - '3.5'
 
+services:
+  - postgresql
+
 before_script:
   - psql -c "create database hikinglog;" -U postgres
 
