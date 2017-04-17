@@ -4,6 +4,9 @@ python:
 - '2.7'
 - '3.5'
 
+before_script:
+  - psql -c "create database hikinglog;" -U postgres
+
 install:
 - pip install -r requirements.pip
 - pip install coveralls
