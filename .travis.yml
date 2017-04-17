@@ -9,8 +9,7 @@ install:
 - pip install coveralls
 
 script:
-  - cd neuropy
-  - coverage run imagersite/manage.py test imagersite
+  - coverage run hikinglog/manage.py test 
 
 after_success:
   - coveralls
