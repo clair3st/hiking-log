@@ -25,4 +25,4 @@ class Hike(models.Model):
 
     def __str__(self):
         """String represntation of the model."""
-        return self.title
+        return self.name
