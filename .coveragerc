@@ -6,7 +6,7 @@ source =
 
 omit = 
     */migrations/*
-    */tests.py
+    */tests/*
     manage.py
     hikinglog/hikinglog/wsgi.py
     */apps.py
