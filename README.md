@@ -1,4 +1,4 @@
-# hiking-log
+# hiking-log [![Build Status](https://travis-ci.org/clair3st/hiking-log.svg?branch=master)](https://travis-ci.org/clair3st/hiking-log)
 Personal Hiking log.
 
 ## Getting Started
