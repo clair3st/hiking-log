@@ -8,7 +8,7 @@ omit =
     */migrations/*
     */tests.py
     manage.py
-    hikinglog/wsgi.py
+    hikinglog/hikinglog/wsgi.py
     */apps.py
     */admin.py
 
