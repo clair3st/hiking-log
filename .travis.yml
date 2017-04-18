@@ -16,10 +16,10 @@ install:
 
 script:
   - python hikinglog/manage.py migrate
-  - coverage run hikinglog/manage.py test hikinglog
+  - coverage run --source=hikinglog hikinglog/manage.py test
 
 after_success:
-  - coveralls
+  - coveralls --rcfile=.coveragerc
 
 notifications:
   email: false
