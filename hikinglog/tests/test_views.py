@@ -74,3 +74,25 @@ class HikeFrontEndTests(TestCase):
         )
         self.assertTemplateUsed(response, "hikinglog/layout.html")
         self.assertTemplateUsed(response, "hikes/edit_hike.html")
+
+    def test_home_route_is_status_ok(self):
+        """Funcional test for home page."""
+        response = self.client.get(reverse_lazy('home'))
+        self.assertTrue(response.status_code == 200)
+
+    def test_home_route_uses_right_templates(self):
+        """Test home returns the right templates."""
+        response = self.client.get(reverse_lazy('home'))
+        self.assertTemplateUsed(response, "hikinglog/base.html")
+        self.assertTemplateUsed(response, "hikinglog/home.html")
+
+    def test_map_route_is_status_ok(self):
+        """Funcional test for map page."""
+        response = self.client.get(reverse_lazy('map'))
+        self.assertTrue(response.status_code == 200)
+
+    def test_map_route_uses_right_templates(self):
+        """Test map returns the right templates."""
+        response = self.client.get(reverse_lazy('map'))
+        self.assertTemplateUsed(response, "hikinglog/base.html")
+        self.assertTemplateUsed(response, "hikinglog/map.html")
