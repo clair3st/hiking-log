@@ -19,7 +19,7 @@ script:
   - coverage run --source=hikinglog hikinglog/manage.py test
 
 after_success:
-  - coveralls --rcfile=coverage.py 
+  - coveralls --rcfile=.coveragerc
 
 notifications:
   email: false
