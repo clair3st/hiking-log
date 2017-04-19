@@ -23,7 +23,6 @@ urlpatterns = [
         name='home'),
     url(r'^map/', TemplateView.as_view(template_name="hikinglog/map.html"),
         name='map'),
-    url(r'^api/', include('hike_api.urls',
-                          namespace='hike_api')),
+    url(r'^api/', include('hike_api.urls')),
     url(r'^hikes/', include('hikes.urls'))
 ]
